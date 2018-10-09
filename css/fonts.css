@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Regular/Robotocondensed.woff") format("woff"), url("../fonts/RobotoCondensed-Regular/Robotocondensed.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold/Robotocondensedbold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold/Robotocondensedbold.ttf") format("truetype"); }
+  
+@font-face {
+  font-family: "BebasNeueBook";
+  font-weight: normal;
+  font-style: normal;
+  src:url("../fonts/BebasNeueBookRegular/BebasNeueBook.ttf") format("truetype"); }
+
+  @font-face {
+  font-family: "BebasNeueBold";
+  font-weight: normal;
+  font-style: normal;
+  src:url("../fonts/BebasNeueBookRegular/BebasNeueBold.ttf") format("truetype"); }
