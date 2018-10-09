@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	/* Кнопка мини-меню*/
 	(function () {
 		$('.menu-wrapper').on('click', function() {
 			$('.hamburger-menu').toggleClass('animate');
@@ -9,16 +9,28 @@ $(document).ready(function() {
 	/*$(".parallax-window").css("min-height", $(window).height());*/
 
 
-	$(window).scroll(function(){ //исчезновение и появления кнопки "написать сообщение""
+	$(window).scroll(function(){ //исчезновение и появления кнопки "вверх"
     var win=$(window);
  
     if(win.scrollTop()<180){
      $('.scroll-top').fadeOut(700)
     }else{
      $('.scroll-top').fadeIn(900)
-    }  
-   
+    }     
   });
+
+  $(window).scroll(function(){ //исчезновение и появления кнопки "верхней полоски меню"
+    var win=$(window);
+ 
+    if(win.scrollTop()<800){
+     $('.header-fix-menu').css('top',-150)
+    }else{
+     $('.header-fix-menu').css('top',0)
+    }     
+  });
+
+
+
 
 	//Parallax effect
 	$('.parallax-window').parallax({imageSrc: 'img/parallax-fon2.jpg'});

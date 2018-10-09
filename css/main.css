@@ -132,6 +132,18 @@ ul li {
   text-decoration: none;
   color: #fff; }
 
+.header-fix-menu {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: -100px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  left: 0;
+  background: rgba(26, 26, 26, 0.7);
+  border-bottom: 1px solid #634e2f; }
+
 .parallax-window {
   min-height: 800px;
   background: transparent;
