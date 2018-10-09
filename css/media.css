@@ -64,9 +64,7 @@
 		-o-flex: 0 0 100%;
 		flex: 0 0 100%;
 	}
-	.header-fix-menu a.download-link{
-		float: right;
-	}
+	
 	a.download-link {
     float: none;
     margin: 0 auto;
@@ -74,6 +72,11 @@
     width: 120px;
     margin-left: 43%;
 	}
+
+	.header-fix-menu a.download-link{
+		float: right;
+	}
+	
 	a.logo {
     margin: 0 auto;
 	}
@@ -88,16 +91,13 @@
     justify-content: center;
 	}
 
-	.download-link{
-	
-	}
 	.menu-wrapper{
 		right: 62%;
     bottom: 60%;
 	}
 	.menu-wrapper-2{
 		right: 90%;
-		bottom: none;
+		bottom: 60%;
 	}
 
 	.parallax-window {
