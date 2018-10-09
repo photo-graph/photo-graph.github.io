@@ -17,9 +17,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1000px) {
- 	header {
-		padding: 10px 0;
-	} 
+ 	
 
 	.menu-wrapper{
 		display: block;
@@ -57,6 +55,10 @@
 }
 
 @media only screen and (max-width : 530px) {
+	header {
+			padding: 10px 0;
+	} 
+
 	.flex{
 		-webkit-flex: 0 0 100%;
 		-moz-flex: 0 0 100%;
