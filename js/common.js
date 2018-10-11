@@ -18,10 +18,13 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(){
-		if($(this).scrollTop() > 10){
+		if($("html, body").width() < 1000){
+			if($(this).scrollTop() > 10){
 			$(".hamburger-menu").removeClass("animate");
 			$(".top-menu-1, .top-menu-2").slideUp(250);
 		}
+		}
+		
 	});
 
 	/* Кнопка мини-меню*/
