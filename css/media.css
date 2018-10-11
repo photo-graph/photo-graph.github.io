@@ -17,7 +17,39 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1000px) {
- 	
+
+
+	.top-menu-1{
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    width: 200%;
+    display: none;
+    background: rgba(26, 26, 26, 0.7);
+	}
+ 	.top-menu-1 li a {
+    line-height: 40px;
+    text-align: center;
+	}
+	.top-menu-1 li {
+    display: block;
+	}
+
+	.top-menu-2{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    display: none;
+    background: rgba(26, 26, 26, 0.7);
+	}
+ 	.top-menu-2 li a {
+    line-height: 40px;
+    text-align: center;
+	}
+	.top-menu-2 li {
+    display: block;
+	}
 
 	.menu-wrapper{
 		display: block;
@@ -55,8 +87,17 @@
 }
 
 @media only screen and (max-width : 530px) {
-	header {
-			padding: 10px 0;
+	.top-menu-1{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    display: none;
+    background: rgba(26, 26, 26, 0.7);
+	}
+
+	.header-not-fixed nav {
+			margin-bottom: 10px;
 	} 
 
 	.flex{

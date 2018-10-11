@@ -1,15 +1,63 @@
 $(document).ready(function() {
+
+	/*Скролинг меню*/
+	$(function(){
+		$("a[href^='#']").click(function(){
+			var _href = $(this).attr("href");
+			if($("html, body").width() > 1000){
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"}, {duration: 1500});
+
+			}else{
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"}, {duration: 1500});
+				$(".hamburger-menu").removeClass("animate");
+				$(".top-menu-1, .top-menu-2").css('display', 'none');
+			}
+
+			return false;
+		});
+	});
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 10){
+			$(".hamburger-menu").removeClass("animate");
+			$(".top-menu-1, .top-menu-2").slideUp(250);
+		}
+	});
+
 	/* Кнопка мини-меню*/
 	(function () {
 		$('.menu-wrapper').on('click', function() {
 			$('.hamburger-menu').toggleClass('animate');
 		})
 	})();
+
+	$(".menu-wrapper-1").click(function(){
+		if($(".hamburger-menu").hasClass('animate')){
+			$(".top-menu-1").slideDown(300);
+		}else{
+			$(".top-menu-1").slideUp(300);
+		}
+		return;
+	});
 	
+	$(".menu-wrapper-2").click(function(){
+		if($(".hamburger-menu").hasClass('animate')){
+			$(".top-menu-2").slideDown(300);;
+		}else{
+			$(".top-menu-2").slideUp(300);
+		}
+		return;
+	});
+
+
+
+
 	/*$(".parallax-window").css("min-height", $(window).height());*/
 
 
-	$(window).scroll(function(){ //исчезновение и появления кнопки "вверх"
+	/*Кнопка ВВЕРХ*/
+
+	$(window).scroll(function(){ //исчезновение и появления кнопки ВВЕРХ
     var win=$(window);
  
     if(win.scrollTop()<180){
@@ -18,6 +66,18 @@ $(document).ready(function() {
      $('.scroll-top').fadeIn(900)
     }     
   });
+
+  $(function(){
+        $(".scroll-top").click(function(){ // Скролинг кнопки ВВЕРХ
+                $("html, body").animate({scrollTop: $(".logo").offset().top+"px"}, {duration: 1500});
+                /* $(".hamburger-menu").removeClass("animate");
+               $(".top-menu-1").css('display', 'none');*/
+                return false;
+        });
+	});
+
+
+
 
   $(window).scroll(function(){ //исчезновение и появления кнопки "верхней полоски меню"
     var win=$(window);
