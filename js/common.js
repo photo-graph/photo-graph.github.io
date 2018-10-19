@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 	/*Скролинг меню*/
 	$(function(){
 		$("a[href^='#']").click(function(){
@@ -80,8 +81,6 @@ $(document).ready(function() {
 	});
 
 
-
-
   $(window).scroll(function(){ //исчезновение и появления кнопки "верхней полоски меню"
     var win=$(window);
  
@@ -135,6 +134,10 @@ $(document).ready(function() {
         }
   // other options
 	});
+
+
+	//Валидация для полей формы
+	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

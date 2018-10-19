@@ -98,7 +98,7 @@ ul.top-menu
   float: left
 
 
-a.download-link 
+a.download-link,.btn-send 
   float: right
   margin-top: 20px
 
@@ -130,7 +130,7 @@ ul li
   transition: .3s
 
 
-.download-link 
+.download-link,.btn-send 
   padding: 0 15px
   line-height: 45px
   background: #00ab47
@@ -147,7 +147,9 @@ ul li
 
 
 
-.download-link:hover 
+
+
+.download-link:hover,.btn-send:hover 
   background: #00cc55
   text-decoration: none
   color: #fff
@@ -249,7 +251,7 @@ i.fa.fa-envelope
   padding-bottom: 1px
 
 
-.style-h h2 
+.style-h h2,.main_form h2 
   font-size: 44px
   font-weight: 400
   font-family: "BebasNeueBold"
@@ -313,6 +315,65 @@ footer
   z-index: 400
   margin-top: -1px
 
+.footer-link 
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  border: 1px solid #634e2f
+  padding: 33px 25px 32px 25px
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  margin: 0 auto
+
+
+
+/* form
+  input:focus,
+  textarea:focus
+    border: 2px solid #EB6761 */
+.main_form
+  color: #e5e3d3;
+  width: 100%
+
+
+.color_element
+  color:#B73545
+  font-size: 12px
+
+.form-group
+  display: block
+  input,
+  textarea
+    display: block
+    width: 100%
+    margin-top: 5px
+    line-height: 40px
+    text-indent: 12px
+    font-size: 14px
+    letter-spacing: 1px
+    border: none
+
+.btn-send
+  border: none
+  letter-spacing: 1px
+
+/* .main_form
+  button
+    
+    color: #fff
+    line-height: 40px
+    padding: 0 25px
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: 600
+    margin-top: 10px
+    float: right */
 
 
 .copy 
