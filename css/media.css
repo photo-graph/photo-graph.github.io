@@ -87,6 +87,10 @@
 }
 
 @media only screen and (max-width : 530px) {
+	.parallax-window h1, .style-h h2, .main_form h2{
+		font-size: 35px;
+	}
+
 	.top-menu-1{
     position: absolute;
     left: 0;
