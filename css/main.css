@@ -108,14 +108,12 @@ ul li {
   transition: .3s; }
 
 a.download-link, .btn-send {
-  /* float: right */
-  margin-top: 20px;
-  padding: 14px;
-  line-height: 80px; }
+  float: right;
+  margin-top: 20px; }
 
 .download-link, .btn-send {
-  /* padding: 0 14px */
-  /* line-height: 45px */
+  padding: 0 14px;
+  line-height: 45px;
   background: #00ab47;
   text-transform: uppercase;
   text-decoration: none;
